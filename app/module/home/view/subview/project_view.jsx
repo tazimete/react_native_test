@@ -8,34 +8,3 @@ import ProjectViewStyles from './../../style/project_view';
 };
 
 export default ProjectView
-
-// export default ProjectView(item) {
-//   return <View style={styles.item}>{item}</View>;
-// };
-
-// export default function ProjectView(project) {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Welcome to NearPro App - Home V2</Text>
-//       <StatusBar style="auto" />
-
-//       {/* <View style={styles.app}>
-//       {itemData.map((item) => {
-//         return <Item key={item.index} data={item.icon} />;
-//       })} */}
-//     {/* </View>  */}
-
-//     <FlatList
-//             contentContainerStyle = {styles.container}
-//             data={itemData}
-//             numColumns={2}
-//             extraData={itemData}
-//             keyExtractor={ (item, index) => index }
-//             renderItem={
-//                 ({item}) => (<Item key={item.index} data={item.icon} />)
-//             }
-//         />
-
-//     </View>
-//   );
-// }

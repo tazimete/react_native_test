@@ -9,23 +9,16 @@ export default function Home() {
     <View style={HomeStyles.container}>
         <StatusBar style="auto" />
         <Text>Welcome to NearPro App - Home V2</Text>
-
-      {/* <View style={HomeStyles.app}>
-      {itemData.map((item) => {
-        return <Item key={item.index} data={item.icon} />;
-      })} */}
-    {/* </View>  */}
-
-    <FlatList
-            contentContainerStyle = {HomeStyles.container}
-            data={itemData}
-            numColumns={2}
-            extraData={itemData}
-            keyExtractor={ (item, index) => index }
-            renderItem={
-                ({item}) => (<ProjectView key={item.index} data={item.icon} />)
-            }
-        />
+        <FlatList
+                contentContainerStyle = {HomeStyles.container}
+                data={itemData}
+                numColumns={2}
+                extraData={itemData}
+                keyExtractor={ (item, index) => index }
+                renderItem={
+                    ({item}) => (<ProjectView key={item.index} data={item.icon} />)
+                }
+            />
     </View>
   );
 }
