@@ -1,9 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet} from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import ProjectViewStyles from './../../style/project_view';
 
-export const  ProjectView = ({ item }) => {
-  return <View style={styles.item}>{item}</View>;
+
+ const ProjectView = ({ item }) => {
+  return <View style={ProjectViewStyles.item}>{item}</View>;
 };
+
+export default ProjectView
+
+// export default ProjectView(item) {
+//   return <View style={styles.item}>{item}</View>;
+// };
 
 // export default function ProjectView(project) {
 //   return (
@@ -31,19 +39,3 @@ export const  ProjectView = ({ item }) => {
 //     </View>
 //   );
 // }
-
-const styles = StyleSheet.create({
-  item: {
-    minWidth: '50%',
-    maxWidth: '50%',
-    height: 200,
-    justifyContent: "center",
-    alignItems: "center",
-
-    // my visual styles; not important for grid
-    padding: 10,
-    backgroundColor: "rgba(249, 180, 45, 0.25)",
-    borderWidth: 1.5,
-    borderColor: "#fff"
-  }
-});
